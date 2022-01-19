@@ -50,13 +50,12 @@ def test_one(): # Pytest function to check if y is greater then x.
 
 def newfile(filename='log.json'): #Creates and initializes a JSON file to capture guess logs.
     newloginit = {"Guessing":[{'ID': 0,}]}
-    with open(filename, 'r') as new_file:
-        data = new_file.read()
-        numchar = len(data)
-    if numchar < 1:
+    try: 
+        open(filename, 'r')
+    except FileNotFoundError:
         with open(filename, 'w') as new_file:
             json.dump(newloginit, new_file, indent = 3)
-
+   
 def record(filename='log.json'): #Logging function to increment guess IDs in JSON file.
     with open(filename, "r") as f:
         json_record = json.load(f)

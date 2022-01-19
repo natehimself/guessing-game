@@ -50,8 +50,17 @@ def test_one():
     x,y = xToY()
     assert x < y
 
-def logging(randomnumber, guess, guessList):
-    logginglist = {'Guess': guess,
+def record(filename='log.json'):
+    
+    with open(filename, "r") as f:
+        json_record = json.load(f)
+        recordId = json_record['Guessing'][-1]['ID']
+        return recordId + 1
+
+
+def logging(recordId, guess, guessList):
+    logginglist = {'ID': recordId,
+        'Correct Number': guess,
     'Guesses': len(guessList),
     'GuessList': guessList
     }
@@ -60,7 +69,9 @@ def logging(randomnumber, guess, guessList):
 def newfile(filename='log.json'):
     newloginit = {
             "Guessing": [
-   
+                { 
+                'ID': 0,
+                }
                 ]
             }
     with open(filename, 'r') as new_file:
@@ -84,5 +95,6 @@ if __name__ == '__main__':
     guess, guessList = guessing(randomCreation(x,y))
     answer(guess)
     newfile()
-    logginglist = logging(randomnumber, guess, guessList)
+    recordId = record()
+    logginglist = logging(recordId, guess, guessList)
     logwriter(logginglist)

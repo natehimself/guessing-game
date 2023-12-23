@@ -1,0 +1,80 @@
+{
+   "Guessing": [
+      {
+         "ID": 0,
+         "Correct Number": 0,
+         "RangeX": 0,
+         "RangeY": 0,
+         "Guesses": 0,
+         "Max Guesses": 0,
+         "GuessList": 0
+      },
+      {
+         "ID": 1,
+         "Correct Number": 408,
+         "RangeX": 20,
+         "RangeY": 500,
+         "Guesses": 5,
+         "Max Guesses": 5,
+         "GuessList": [
+            56,
+            56,
+            56,
+            56,
+            56
+         ]
+      },
+      {
+         "ID": 2,
+         "Correct Number": 81,
+         "RangeX": 20,
+         "RangeY": 500,
+         "Guesses": 6,
+         "Max Guesses": 5,
+         "GuessList": [
+            456,
+            456,
+            45,
+            34,
+            6,
+            45
+         ]
+      },
+      {
+         "ID": 3,
+         "Correct Number": 370,
+         "RangeX": 20,
+         "RangeY": 500,
+         "Guesses": 10,
+         "Max Guesses": 5,
+         "GuessList": [
+            645,
+            34,
+            6,
+            5,
+            4,
+            3,
+            67,
+            67,
+            67,
+            67
+         ]
+      },
+      {
+         "ID": 4,
+         "Correct Number": 137,
+         "RangeX": 20,
+         "RangeY": 500,
+         "Guesses": 6,
+         "Max Guesses": 5,
+         "GuessList": [
+            67,
+            55,
+            45,
+            6,
+            78,
+            45
+         ]
+      }
+   ]
+}

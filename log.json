@@ -75,6 +75,32 @@
             78,
             45
          ]
+      },
+      {
+         "ID": 5,
+         "Correct Number": 169,
+         "RangeX": 20,
+         "RangeY": 500,
+         "Guesses": 5,
+         "Max Guesses": 5,
+         "GuessList": [
+            20,
+            50,
+            100,
+            200,
+            150
+         ]
+      },
+      {
+         "ID": 6,
+         "Correct Number": 1,
+         "RangeX": 1,
+         "RangeY": 5,
+         "Guesses": 1,
+         "Max Guesses": 5,
+         "GuessList": [
+            1
+         ]
       }
    ]
 }

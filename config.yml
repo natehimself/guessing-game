@@ -1,4 +1,4 @@
 config_settings: 
-  x: 20
-  y: 500
+  x: 1
+  y: 5
   max_guess: 5
